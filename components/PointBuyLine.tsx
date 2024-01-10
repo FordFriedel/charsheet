@@ -35,7 +35,9 @@ const PointBuyLine = ({attribute,character,updateCharacter}:{attribute: Attribut
             {attribute}
             <button onClick={decreaseAttribute}>  - </button>
             {character.Attributes[attribute]}
-            <button onClick={increaseAttribute}> +</button>
+            <button onClick={increaseAttribute}> +   </button>
+            {`Racial Bonus: ${character.race ? character.race?.AttributeBonus[attribute] : 0}`}
+            {`Total: ${character.race ? character.race?.AttributeBonus[attribute] + character.Attributes[attribute] : character.Attributes[attribute]}`}
         </div>
     )
 }

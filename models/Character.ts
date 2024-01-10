@@ -1,5 +1,9 @@
+import Race from "./Race/Race";
+
 export default class Character {
     name: string = "Tav";
+
+    race: Race | undefined;
 
     AttributePoints : number = 27;
     Attributes: {
@@ -17,6 +21,4 @@ export default class Character {
         Wisdom: 8,
         Charisma: 8,
     }
-
-    
 }
