@@ -1,9 +1,14 @@
+import CharClass from "./CharClasses/CharClass";
 import Race from "./Race/Race";
 
 export default class Character {
     name: string = "Tav";
 
     race: Race | undefined;
+
+    charClass: CharClass | undefined;
+    useRecommendedAS: boolean = false;
+
 
     AttributePoints : number = 27;
     Attributes: {
